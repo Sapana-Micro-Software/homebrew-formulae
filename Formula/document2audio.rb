@@ -12,6 +12,7 @@ class Document2audio < Formula
     def install
       bin.install "document2audio.sh" => "document2audio"
       chmod 0755, bin/"document2audio"
+      system "chmod", "+x", bin/"document2audio"
     end
   
     test do
